@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -30,6 +31,9 @@ namespace Практика2
                     break;
                 case 2:
                     AverageLevel();
+                    break;
+                case 3:
+                    Advlvl();
                     break;
 
 
@@ -78,6 +82,26 @@ namespace Практика2
             Console.WriteLine("Задание 33. LINQ: сотрудники (top-3, avg по отделу, фильтр)");
             Console.WriteLine("Задание 34. LINQ: группировка слов по первой букве" + Environment.NewLine);
             Console.WriteLine("Выберите задание: ");
+        }
+        public void Advlvl()
+        {
+            Console.Clear();
+            Console.WriteLine("--- Уровень: Эксперт / Профессиональный (Задания 36–50) ---");
+            Console.WriteLine("Задание 36. Дубликаты в List (HashSet + GroupBy)");
+            Console.WriteLine("Задание 37. Мемоизация Фибоначчи через Dictionary");
+            Console.WriteLine("Задание 38. List<T> vs LinkedList<T> (бенчмарк)");
+            Console.WriteLine("Задание 39. yield return — генератор чётных чисел");
+            Console.WriteLine("Задание 40. async/await + обработка исключений");
+            Console.WriteLine("Задание 41. Task.WhenAll — параллельно 10 задач");
+            Console.WriteLine("Задание 42. CancellationToken — отмена через 2 сек");
+            Console.WriteLine("Задание 43. Множественные типы исключений, порядок catch");
+            Console.WriteLine("Задание 44. Мини-проект «Todo List» (классы + JSON)");
+            Console.WriteLine("Задание 45. Мини-проект «Библиотека» + юнит-тесты коммита)" + Environment.NewLine);
+            Console.WriteLine("Выберите задание: ");
+
+            int a = Convert.ToInt32(Console.ReadLine());
+            Advv program = new Advv();
+            program.Swith(a);
         }
     }
 }
